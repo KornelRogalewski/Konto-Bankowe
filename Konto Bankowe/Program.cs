@@ -18,6 +18,9 @@ namespace Konto_Bankowe
             Console.WriteLine(kontoBankowe.StanKonta());
             Console.WriteLine(kontoBankowe.Numer());
             automat.PokazMonety();
+
+            KontoBankowe kontoBankowe2 = new KontoBankowe();
+            Console.WriteLine(kontoBankowe.Numer());
         }
     }
 }
