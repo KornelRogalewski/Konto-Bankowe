@@ -10,17 +10,22 @@ namespace Konto_Bankowe
 
             Automat automat = new Automat();
 
-            automat.WrzucMonete(kontoBankowe, "2");
-            automat.WrzucMonete(kontoBankowe, "0.5");
-            automat.WrzucMonete(kontoBankowe, "3");
-            automat.WrzucMonete(kontoBankowe, "dwa");
+            automat.WrzucMonety(kontoBankowe, "2");
+            automat.WrzucMonety(kontoBankowe, "0.5");
+            automat.WrzucMonety(kontoBankowe, "0,2");
+            automat.WrzucMonety(kontoBankowe, "3");
+            automat.WrzucMonety(kontoBankowe, "dwa");
 
             Console.WriteLine(kontoBankowe.StanKonta());
             Console.WriteLine(kontoBankowe.Numer());
             automat.PokazMonety();
 
             KontoBankowe kontoBankowe2 = new KontoBankowe();
-            Console.WriteLine(kontoBankowe.Numer());
+            Console.WriteLine(kontoBankowe2.Numer());
+
+            automat.WrzucMonety2(kontoBankowe2, "5 2 abc 0.5 3");
+            Console.WriteLine(kontoBankowe2.StanKonta());
+            
         }
     }
 }

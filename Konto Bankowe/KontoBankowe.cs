@@ -31,6 +31,9 @@ namespace Konto_Bankowe
         {
             return ($"Saldo Konta: {_saldo} zł.");
         }
-
+        //public string HistoriaWplat()
+        //{
+            
+        //}
     }
 }
